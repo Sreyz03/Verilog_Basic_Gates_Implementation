@@ -18,16 +18,20 @@ module nand_gate_tb1;
     $display(" ****** Truth Table NAND GATE ******* ");
     
     a = 1'b0; b = 1'b0;
-    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    #100
+    $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
     
     a = 1'b0; b = 1'b1;
-    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    #100 
+    $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
     
     a = 1'b1; b = 1'b0;
-    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    #100 
+    $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
     
     a = 1'b1; b = 1'b1;
-    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    #100 
+    $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
     $display("  ");
     #100 $finish;
   end
