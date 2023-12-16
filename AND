@@ -1,0 +1,36 @@
+#AND
+
+Design:
+module AND_gate(a,b,y);
+  input a,b;
+  output y;
+  assign y= a&b;
+endmodule
+
+Testbench:
+module AND_gate_tb3;
+  reg a, b;
+  wire y;
+  AND_gate dut(a, b, y);
+
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
+    $display("   ");
+    $display(" ****** Truth Table AND GATE ******* ");
+    
+    a = 1'b0; b = 1'b0;
+    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    
+    a = 1'b0; b = 1'b1;
+    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    
+    a = 1'b1; b = 1'b0;
+    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    
+    a = 1'b1; b = 1'b1;
+    #100 $display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    $display("   ");
+    #100 $finish;
+  end
+endmodule
