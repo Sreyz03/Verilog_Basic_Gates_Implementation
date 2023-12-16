@@ -1,0 +1,29 @@
+#NOT
+
+Design:
+module NOT_gate(
+  input a,
+  output b);
+  assign b=~a ;
+endmodule
+
+Testbench:
+module NOT_gate_tb6;
+  reg a;
+  wire b;
+  NOT_gate dut(a,b);
+  
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
+    $display("   ");
+    $display(" ****** Truth Table NOT GATE ******* ");
+    a='b0 ; 
+    #100$display("Input: a=%b, Output: b=%b", a, b);
+    a='b1 ; 
+    #100$display("Input: a=%b, Output: b=%b" ,a, b);
+    $display("   ");
+    #100
+    $finish;
+  end
+endmodule
