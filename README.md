@@ -8,6 +8,9 @@ Well-documented source code to aid understanding and modification.
 Educational resource for Verilog beginners and digital design enthusiasts.
 Easy integration into larger Verilog projects for more complex digital systems.
 
+EDA Playground links:
+[NAND_Gate](https://edaplayground.com/x/ZLqK)
+
 Usage:
 Clone the repository to your local machine.
 Explore the src directory to find Verilog files for individual gates.
