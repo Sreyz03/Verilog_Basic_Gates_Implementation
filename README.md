@@ -10,6 +10,7 @@ Easy integration into larger Verilog projects for more complex digital systems.
 
 EDA Playground links:
 [NAND_Gate](https://edaplayground.com/x/ZLqK)
+[NOR_Gate](https://edaplayground.com/x/NwZz)
 
 Usage:
 Clone the repository to your local machine.
