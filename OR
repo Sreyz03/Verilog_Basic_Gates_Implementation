@@ -1,0 +1,33 @@
+#OR
+
+Design:
+module OR_gate(
+  input a,b,
+  output y);
+  assign y= a|b ;
+endmodule
+
+Testbench:
+module OR_gate_tb4;
+  reg a,b;
+  wire y;
+  OR_gate dut(a,b,y);
+  
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
+    $display("   ");
+    $display(" ****** Truth Table OR GATE ******* ");
+    a='b0 ; b='b0;
+    #100$display("Input: a=%b, b=%b, Output: y=%b", a, b, y);
+    a='b0 ; b='b1;
+    #100$display("Input: a=%b, b=%b, output: y=%b" ,a, b, y);
+    a='b1 ; b='b0;
+    #100$display("Input: a=%b, b=%b, output: y=%b" ,a, b, y);
+    a='b1 ; b='b1;
+    #100$display("Input: a=%b, b=%b, output: y=%b" ,a, b, y);
+    $display("   ");
+    #100
+    $finish;
+  end
+endmodule
