@@ -14,6 +14,7 @@ EDA Playground links:
 [AND](https://edaplayground.com/x/a4ke)
 [OR](https://edaplayground.com/x/g_Ku)
 [XOR](https://edaplayground.com/x/M75P)
+[NOT](https://edaplayground.com/x/kNdR)
 
 Usage:
 Clone the repository to your local machine.
