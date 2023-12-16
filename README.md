@@ -11,6 +11,7 @@ Easy integration into larger Verilog projects for more complex digital systems.
 EDA Playground links:
 [NAND](https://edaplayground.com/x/ZLqK)
 [NOR](https://edaplayground.com/x/NwZz)
+[AND](https://edaplayground.com/x/a4ke)
 
 Usage:
 Clone the repository to your local machine.
